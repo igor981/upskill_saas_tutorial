@@ -10,12 +10,11 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
 
-@import 'bootstrap-sprockets';
-@import 'bootstrap';
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 @import "font-awesome-sprockets";
 @import "font-awesome";
@@ -30,7 +29,7 @@ h1, h2, h3 {
   background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
+// styles
 .navbar {
   border:none;
 }
@@ -48,6 +47,19 @@ h1, h2, h3 {
   }
 
 }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus {
+    background-color: #00c6ff;
+  }
+}
+
+
+// Home Page Styles
 .home-callout {
   color: white;
   margin-top: -20px;
